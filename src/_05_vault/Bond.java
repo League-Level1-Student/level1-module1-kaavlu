@@ -1,17 +1,16 @@
 package _05_vault;
 
 public class Bond {
-	
-	public static int findCode() {
-		int code = 0;
+
+	static Vault newVault = new Vault(100000);
+	public static void findCode() {
 		for(int i = 0; i<1000000; i++) {
 			if(newVault.getCode()==i) {
-				code = i;
+				System.out.println(i);
 			}else {
-				code = -1;
+				break;
 			}
 		}
-		System.out.println(code);
-		return code;
+		System.out.println(-1);
 	}
 }

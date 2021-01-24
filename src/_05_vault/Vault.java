@@ -3,7 +3,6 @@ package _05_vault;
 public class Vault {
 	static int lockCode;
 	
-
 	public Vault(int code) {
 		setCode(code);
 	}
@@ -25,5 +24,8 @@ public class Vault {
 		}
 		return TrueorFalse;
 	}
-	Vault newVault = new Vault(100000200);
+	public int toInt() {
+		int output = getCode();
+		return output;
+	}
 }
